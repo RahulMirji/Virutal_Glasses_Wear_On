@@ -34,3 +34,39 @@ Make sure you have Python 3.x installed. The project requires the following libr
 ```bash
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 cd your-repo-name
+```
+### 2. Create and activate a virtual environment
+This is highly recommended to avoid conflicts with your system's Python packages.
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 3. Install the required libraries
+
+With your virtual environment active, install the dependencies:
+```bash
+pip install opencv-python mediapipe numpy
+```
+### 4. Add the glasses image
+
+Place a transparent PNG image of glasses named glasses.png in the same directory as the script.
+
+### 5. Run the application
+```bash
+
+python3 glasses.py
+```
+
+### 📚 Future Enhancements
+
+    Rotation and Tilt: Implement a more advanced algorithm to rotate the glasses based on head tilt.
+
+    Multi-frame Support: Allow users to switch between different glasses frames (e.g., using a dropdown menu or keyboard shortcuts).
+
+    Color Customization: Add a color picker to change the frame color in real time.
+
+    Face Tracking for Multiple People: Extend the system to detect and track multiple faces simultaneously.
+
+### 🤝 Contribution
+
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
