@@ -1,0 +1,4 @@
+# Virtual environment
+project_env/
+__pycache__/
+*.pyc
